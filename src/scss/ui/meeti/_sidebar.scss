@@ -1,0 +1,44 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    &__imagen {
+        width: 100%;
+        display: block;
+        height: 25rem;
+
+    }
+    
+    &__direccion {
+        background-color: v.$secundario;
+        height: 30rem;
+
+    }
+
+    &__heading {
+        text-align: center;
+        color: v.$blanco;
+        padding: 5rem 0 0 0;
+        @include m.tablet { 
+            padding: 6rem 0 0 0;
+         }
+       
+
+    }
+    &__texto {
+        max-width: 35rem;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 2rem;
+        color: v.$blanco;
+        @include m.tablet { 
+            max-width: 40rem;
+         }
+        
+
+
+    }
+
+}

@@ -14,10 +14,14 @@
         
         @include m.grid(1, 2rem);
         @include m.tablet { 
-            display: grid;
-            grid-template-columns: 60% 40%;
+            @include m.grid(3, 2rem);
+            // display: grid;
+            // grid-template-columns: 60% 40%;
          }
 
+    }
+    &__contenido {
+        grid-column: 1 / 3;
     }
 
  

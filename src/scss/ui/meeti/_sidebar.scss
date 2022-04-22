@@ -2,8 +2,9 @@
 @use 'base/variables' as v;
 
 .sidebar {
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
+
     &__imagen {
         width: 100%;
         display: block;
@@ -14,15 +15,16 @@
     &__direccion {
         background-color: v.$secundario;
         height: 30rem;
+        padding: 8.5rem 0 0 0;
 
     }
 
     &__heading {
         text-align: center;
         color: v.$blanco;
-        padding: 5rem 0 0 0;
+        margin-top: 0;
         @include m.tablet { 
-            padding: 6rem 0 0 0;
+            padding: 0 0 0 0;
          }
        
 
